@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+/* Reset */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Main Styling */
+html,
+body {
+	font-family: 'Oswald', sans-serif;
+	scroll-behavior: smooth;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+h2 {
+	font-size: 2rem;
+}
+h3 {
+	font-size: 1.75rem;
+}
+h4 {
+	font-size: 1.5rem;
+}
+h5 {
+	font-size: 1.25rem;
+}
+h6 {
+	font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 15px;
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+p {
+	margin: 10px 0;
+	line-height: 1.7em;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Utility Classes */
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+.display-1 {
+	font-size: 7rem;
+}
+
+.flex-3,
+.flex-2 {
+	display: flex;
+	justify-content: space-between;
+}
+
+.subtitle {
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+/* Mainheader */
+#mainheader {
+	background: url('/images/background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+	height: 150px;
+}
+
+.navbar .logo {
+	background: #fff;
+	padding: 20px;
+	border-radius: 50px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar .logo img {
+	width: 40px;
+}
+
+.navbar a {
+	color: #000;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.navbar ul {
+	background: #fff;
+	display: flex;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar ul li {
+	padding: 10px 20px;
+}
+
+.navbar .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+
+/* Showcase */
+.showcase {
+	text-align: center;
+	margin-top: 200px;
+}
+
+.showcase h1 {
+	-webkit-text-stroke: 4px #fff;
+	font-weight: 700;
+	text-shadow: #000 1px 0 10px;
+}
+
+.showcase .material-symbols-outlined {
+	font-size: 80px;
+	color: #fff;
+}
+
+/* Work */
+#work {
+	padding: 80px 0;
+}
+
+#work img {
+	height: 550px;
+}
+
+/* About */
+#about {
+	padding: 80px 0 0 0;
+	background-image: linear-gradient(#fed206, #ffe87c);
+}
+
+.about-text {
+	padding: 80px 0 0 40px;
+}
+
+/* Contact */
+#contact {
+	padding: 80px 0;
+}
+
+#contact img {
+	height: 40px;
+}
+
+.contact-detail {
+	margin-top: -30px;
+}
+
+/* Footer */
+#mainfooter {
+	background: #000;
+	text-align: center;
+	padding: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	#work .flex-3,
+	#about .flex-2 {
+		flex-direction: column;
+	}
+
+	#work img {
+		height: 100%;
+		margin-bottom: 10px;
+	}
+
+	#about {
+		padding-bottom: 80px;
+	}
+}
